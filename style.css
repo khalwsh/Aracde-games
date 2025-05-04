@@ -1,0 +1,45 @@
+.heading-style{
+    display: block;
+    background-color : #8080805e;
+    text-align: center;
+    color: black;
+    height : 40px;
+}
+
+/* make the main container a 3-column grid */
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* each "card" is a flex-box column, centered */
+  .game-card {
+    background: #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* center horizontally */
+    justify-content: center;  /* center vertically */
+    height: 200px;            /* adjust to taste */
+    box-sizing: border-box;
+  }
+  
+  /* style the play button */
+  .play-button {
+    margin-top: 12px;
+    background-color: #28a745; /* bootstrap-green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .play-button:hover {
+    background-color: #218838;
+  }
+  
