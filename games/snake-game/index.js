@@ -1,9 +1,12 @@
 const GRID_SIZE = 21;
+
+// generate random position to put food in
 function randomGridPosition() {
   return { x: Math.floor(Math.random() * GRID_SIZE) + 1,
            y: Math.floor(Math.random() * GRID_SIZE) + 1 };
 }
 
+// input and last direction because if no input I will continue in same direction and new input must not make me turn 180 degree
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 window.addEventListener('keydown', e => {
@@ -22,6 +25,7 @@ window.addEventListener('keydown', e => {
       break;
   }
 });
+
 function getInputDirection() {
   lastInputDirection = inputDirection;
   return inputDirection;
