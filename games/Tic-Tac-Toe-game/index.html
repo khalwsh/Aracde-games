@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <h1>Tic Tac Toe</h1>
+
+    <div id="modeSelection">
+      <button id="twoPlayerBtn" class="mode-btn">2 Player Mode</button>
+      <button id="aiBtn" class="mode-btn">AI Mode</button>
+    </div>
+
+    <!-- Board & status (hidden until mode chosen) -->
+    <div id="boardArea" class="hidden">
+      <div id="cellContainer">
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
+      <h2 id="statusText"></h2>
+      <button id="restartBtn" class="hidden">Restart</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
