@@ -40,7 +40,7 @@ function cellClicked() {
   updateCell(this, idx);
   checkWinner();
   if (running && mode === 'AI' && currentPlayer === 'O') {
-    setTimeout(aiMove, 300);
+    setTimeout(aiMove, 100);
   }
 }
 
