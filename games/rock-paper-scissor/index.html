@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors – Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>Rock ✊ Paper ✋ Scissors ✌️</h1>
+
+    <div class="arena">
+      <div class="player-area">
+        <h2>You</h2>
+        <img id="player-display" src="images/rock.png" alt="Your choice">
+      </div>
+      <div class="computer-area">
+        <h2>Computer</h2>
+        <img id="computer-display" src="images/rock.png" alt="Computer choice">
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="choice-btn" data-choice="rock">Rock</button>
+      <button class="choice-btn" data-choice="paper">Paper</button>
+      <button class="choice-btn" data-choice="scissors">Scissors</button>
+    </div>
+
+    <div class="result">
+      <p id="result-text">Make your move!</p>
+    </div>
+
+    <div class="scoreboard">
+      <span>You: <strong id="player-score">0</strong></span>
+      <span>CPU: <strong id="computer-score">0</strong></span>
+    </div>
+
+    <button id="reset">Reset Game</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
