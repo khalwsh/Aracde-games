@@ -7,7 +7,7 @@ _A one-stop arcade portal featuring 12 classic and modern mini-games built with 
 
 ## 🚀 Demo
 
-> **demo:** [YourLiveDemoLinkHere](https://yourusername.github.io/arcade-game-hub)  
+> **demo:** [video](https://yourusername.github.io/arcade-game-hub)  
 ---
 
 ## 📖 Table of Contents
