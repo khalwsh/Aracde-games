@@ -52,8 +52,8 @@ Arcade Game Hub is a lightweight web application that lets users jump right into
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/yourusername/arcade-game-hub.git
-   cd arcade-game-hub
+   git clone https://github.com/khalwsh/Aracde-games.git
+   cd Arcade-games
    ```
 2. Open in Browser
 - Double-click index.html
@@ -90,15 +90,15 @@ games/           # Folder containing each individual game
 └── ...          # Other game folders follow the same structure
 ```
 ## Features
-🎨 Responsive Design – Play on desktop, tablet, or mobile.
+- Responsive Design – Play on desktop, tablet, or mobile.
 
-🚀 Fast Load Times – No heavy frameworks; just vanilla JS & CSS.
+- Fast Load Times – No heavy frameworks; just vanilla JS & CSS.
 
-🔊 Audio Effects – Each game includes sound feedback.
+- Audio Effects – Each game includes sound feedback.
 
-🔄 Seamless Navigation – Built-in back button to return to the main menu.
+- Seamless Navigation – Built-in back button to return to the main menu.
 
-🛠️ Modular Code – Each game in its own folder for easy extension.
+- Modular Code – Each game in its own folder for easy extension.
 
 ## Technologies
 HTML5 – Semantics & structure
@@ -107,4 +107,3 @@ CSS3 – Flexbox, Grid & animations
 
 JavaScript – ES6 modules & DOM manipulation
 
-Audio API – Sound effects & music
