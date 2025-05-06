@@ -19,7 +19,6 @@ _A one-stop arcade portal featuring 12 classic and modern mini-games built with 
 5. [Project Structure](#project-structure)  
 6. [Features](#features)  
 7. [Technologies](#technologies)  
-8. [License](#license)
 
 ---
 
