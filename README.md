@@ -1,6 +1,6 @@
 # 🎮 Arcade Game Hub
 
-![Arcade Banner](https://img.shields.io/badge/HTML-CSS-JS-orange?logo=html5&logoColor=white)  
+![Arcade Banner](https://github.com/khalwsh/Aracde-games/blob/main/padge.png)  
 _A one-stop arcade portal featuring 12 classic and modern mini-games built with pure HTML, CSS & JavaScript._
 
 ---
