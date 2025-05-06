@@ -101,9 +101,9 @@ games/           # Folder containing each individual game
 - Modular Code – Each game in its own folder for easy extension.
 
 ## Technologies
-HTML5 – Semantics & structure
+- HTML5 – Semantics & structure
 
-CSS3 – Flexbox, Grid & animations
+- CSS3 – Flexbox, Grid & animations
 
-JavaScript – ES6 modules & DOM manipulation
+- JavaScript – ES6 modules & DOM manipulation
 
