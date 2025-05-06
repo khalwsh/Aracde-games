@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  #gameContainer {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #111;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  }
+  .paddle {
+    position: absolute;
+    width: 15px;
+    height: 80px;
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(231,76,60,0.8);
+  }
+  #paddle1 { left: 10px; top: calc(50% - 40px); }
+  #paddle2 { right: 10px; top: calc(50% - 40px);
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    box-shadow: 0 0 10px rgba(52,152,219,0.8);
+  }
+  #ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #f1c40f, #e67e22);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(241,196,15,0.9);
+    will-change: transform;
+  }
+  #scoreText {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+  }
+  #resetBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background: #27ae60;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(39,174,96,0.8);
+  }
+  #resetBtn:hover {
+    background: #2ecc71;
+  }
