@@ -3,7 +3,7 @@ const gameCards = document.querySelectorAll(".game-card");
 
 let descriptions = [
     // 1. XO 
-    "A classic two-player game where you take turns placing Xs and Os on a 3×3 grid. Be the first to get three in a row—horizontally, vertically, or diagonally—to win!",
+    "A classic two-player game with ability to play the AI where you take turns placing Xs and Os on a 3×3 grid. Be the first to get three in a row—horizontally, vertically, or diagonally—to win!",
   
     // 2. Snake Game
     "Control a growing snake as it slithers around the board eating food. Each bite makes you longer—avoid hitting the walls or your own tail to keep going!",
@@ -12,7 +12,7 @@ let descriptions = [
     "Face off against the computer in this hand-gesture duel. Choose rock, paper, or scissors—paper beats rock, scissors beat paper, and rock beats scissors!",
   
     // 4. Pong Game
-    "The original arcade classic: bounce the ball past your opponent’s paddle to score. Play solo against AI or head-to-head with a friend!",
+    "The original arcade classic: bounce the ball past your opponent’s paddle to score. Play head-to-head with a friend!",
   
     // 5. Minesweeper Game
     "Reveal empty squares while avoiding hidden mines. Use the numbers you uncover as clues to flag where mines are lurking—clear the board without triggering one!",
