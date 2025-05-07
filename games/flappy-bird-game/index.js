@@ -5,7 +5,6 @@ const context = board.getContext("2d");
 board.width = boardWidth;
 board.height = boardHeight;
 
-// ====== Bird ======
 const birdImg = new Image();
 birdImg.src = "resources/flappybird.png";
 
@@ -17,7 +16,6 @@ const bird = {
     velocityY: 0
 };
 
-// ====== Pipes ======
 const pipeWidth = 64;     // aspect ratio roughly 1:8
 const pipeHeight = 512;
 const pipeGap = boardHeight / 4;
@@ -31,12 +29,10 @@ bottomPipeImg.src = "resources/bottompipe.png";
 
 let pipes = [];
 
-// ====== Physics & Game State ======
 const gravity = 0.4;
 let gameOver = false;
 let score = 0;
 
-// ====== Initialization ======
 window.onload = () => {
     // start the bird drawing once its image loads
     birdImg.onload = () => drawBird();
@@ -51,7 +47,6 @@ window.onload = () => {
     requestAnimationFrame(update);
 };
 
-// ====== Game Loop ======
 function update() {
     // always schedule the next frame
     requestAnimationFrame(update);
@@ -79,7 +74,6 @@ function update() {
     }
 }
 
-// ====== Physics & Drawing Helpers ======
 function applyGravity() {
     bird.velocityY += gravity;
     bird.y = Math.max(0, bird.y + bird.velocityY);
@@ -116,7 +110,6 @@ function checkCollisions() {
     if (hitGround || hitPipe) gameOver = true;
 }
 
-// ====== Pipe Generation ======
 function placePipePair() {
     if (gameOver) return;
 
@@ -131,7 +124,6 @@ function placePipePair() {
     );
 }
 
-// ====== Controls & Reset ======
 function handleInput(e) {
     if (!["Space", "ArrowUp", "KeyX"].includes(e.code)) return;
 
@@ -148,7 +140,6 @@ function handleInput(e) {
     bird.velocityY = -6;
 }
 
-// ====== Collision Detection ======
 function detectCollision(a, b) {
     return (
     a.x < b.x + b.width &&

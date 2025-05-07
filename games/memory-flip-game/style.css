@@ -5,7 +5,6 @@ body {
   color: #333;
 }
 
-/* Splash */
 .control-buttons {
   position: fixed; inset: 0;
   background: rgba(128,128,128,0.9);
@@ -23,7 +22,6 @@ body {
   cursor: pointer;
 }
 
-/* Info bar */
 .info-container {
   max-width: 90%;
   margin: 1rem auto;
@@ -40,7 +38,6 @@ body {
   flex: 1;
 }
 
-/* Grid of cards */
 .memory-game-blocks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -53,7 +50,6 @@ body {
   pointer-events: none;
 }
 
-/* Individual card */
 .game-block {
   position: relative;
   width: 100%;
