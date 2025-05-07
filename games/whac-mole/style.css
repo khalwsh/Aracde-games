@@ -1,0 +1,78 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: gray;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 30px;
+    text-shadow: 2px 2px #000;
+}
+
+#score {
+    font-size: 2em;
+    margin: 10px 0;
+    text-shadow: 2px 2px #000;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("images/soil.png");
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #000;
+    position: relative;
+}
+
+
+#restart {
+    display: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: auto;
+}
+
+#restart:hover {
+    background-color: #218838;
+}
+#board div {
+    width: 180px;
+    height: 180px;
+    background-image: url("images/pipe.png");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    bottom: -50px; /* start hidden below the pipe */
+    transition: bottom 0.3s ease-out;
+}
+
+#board div img.active {
+    bottom: 30px; /* pop-up position */
+}

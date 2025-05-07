@@ -32,9 +32,8 @@ let descriptions = [
     // 10. Tetris
     "Rotate and drop falling tetrominoes to form full horizontal lines. Clear lines to score points and keep the stack from reaching the top!",
   
-    // 11. Fish
-    "Swim through an underwater maze as a hungry fish, gobbling up smaller prey to grow larger—just don't become someone else’s dinner!",
-  
+    // 11. whac-mole
+    "Whac-mole is game where your target is to hit the rabbits without hitting the plant" , 
     // 12. Ludo
     "Race your four tokens from start to finish by rolling dice. Move strategically, send opponents’ tokens back to start, and be the first to get all home!"
   ];
