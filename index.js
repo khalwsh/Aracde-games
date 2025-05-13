@@ -15,7 +15,7 @@ let descriptions = [
     "The original arcade classic: bounce the ball past your opponent’s paddle to score. Play head-to-head with a friend!",
   
     // 5. Minesweeper Game
-    "Reveal empty squares while avoiding hidden mines. Use the numbers you uncover as clues to flag where mines are lurking—clear the board without triggering one!",
+    "in this game there are some mines randomly suffled in a map , you want to explore all cells such a way that no mine you step into it , when you encounter a cell it has 3 cases either be a mine or empty or cell with number , that number is the number of mines in the neighboring cells",
   
     // 6. Memory Flip Game
     "Flip over cards two at a time to find matching pairs. Train your concentration and recall—clear all the cards in as few moves as possible!",
