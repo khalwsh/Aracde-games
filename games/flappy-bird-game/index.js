@@ -29,7 +29,7 @@ bottomPipeImg.src = "resources/bottompipe.png";
 
 let pipes = [];
 
-const gravity = 0.4;
+const gravity = 0.2;
 let gameOver = false;
 let score = 0;
 
@@ -55,23 +55,25 @@ function update() {
     context.clearRect(0, 0, boardWidth, boardHeight);
 
     if (!gameOver) {
-    // game logic & drawing
-    applyGravity();
-    drawBird();
-    moveAndDrawPipes();
-    drawScore();
-    checkCollisions();
+        // game logic & drawing
+        
+        applyGravity();
+        drawBird();
+        moveAndDrawPipes();
+        drawScore();
+        checkCollisions();
     } else {
-    // draw final frame (so game objects don’t vanish)
-    drawBird();
-    pipes.forEach(pipe =>
-        context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height)
-    );
-    drawScore();
-    context.fillStyle = "#fff";
-    context.font = "45px sans-serif";
-    context.fillText("GAME OVER", 5, 90);
+        // draw final frame (so game objects don’t vanish)
+        drawBird();
+        pipes.forEach(pipe =>
+            context.drawImage(pipe.img, pipe.x, pipe.y, pipe.width, pipe.height)
+        );
+        drawScore();
+        context.fillStyle = "#fff";
+        context.font = "45px sans-serif";
+        context.fillText("GAME OVER", 5, 90);
     }
+    
 }
 
 function applyGravity() {
