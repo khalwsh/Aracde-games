@@ -9,7 +9,7 @@ let boardHeight = 500;
 
 let playerWidth = 80;
 let playerHeight = 10;
-let playerVelocityX = 15;
+let playerVelocityX = 25;
 
 let player = {
     x: boardWidth / 2 - playerWidth / 2,
@@ -21,8 +21,8 @@ let player = {
 
 let ballWidth = 10;
 let ballHeight = 10;
-let ballVelocityX = 2;
-let ballVelocityY = 1;
+let ballVelocityX = 3;
+let ballVelocityY = 2;
 
 let ball = {
     x: boardWidth / 2,
