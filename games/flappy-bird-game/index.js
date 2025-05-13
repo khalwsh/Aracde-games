@@ -18,8 +18,8 @@ const bird = {
 
 const pipeWidth = 64;     // aspect ratio roughly 1:8
 const pipeHeight = 512;
-const pipeGap = boardHeight / 4;
-const pipeSpeed = -2;
+const pipeGap = boardHeight / 3;
+const pipeSpeed = -1;
 
 const topPipeImg = new Image();
 topPipeImg.src = "resources/toppipe.png";
@@ -41,7 +41,7 @@ window.onload = () => {
     document.addEventListener("keydown", handleInput);
 
     // spawn pipes every 1.5s
-    setInterval(placePipePair, 1500);
+    setInterval(placePipePair, 3000);
 
     // start the loop
     requestAnimationFrame(update);
