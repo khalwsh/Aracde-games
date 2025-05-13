@@ -92,34 +92,44 @@ function aiMove() {
 }
 
 function minimax(board, player) {
-  const avail = board.map((v,i) => v === '' ? i : null).filter(i => i !== null);
-  // base case
-  if (checkWin(board, 'X')) return {score: -1};
-  if (checkWin(board, 'O')) return {score: 1};
-  if (avail.length === 0) return {score: 0};
+  // find all empty cell indices
+  const avail = board
+    .map((v,i) => v === '' ? i : null)
+    .filter(i => i !== null);
 
-  const moves = [];
-  for (const idx of avail) {
-    const newBoard = board.slice();
-    newBoard[idx] = player;
-    const result = minimax(newBoard, player === 'O' ? 'X' : 'O');
-    moves.push({index: idx, score: result.score});
-  }
+  // pick one at random
+  const choice = avail[Math.floor(Math.random() * avail.length)];
 
-  // transation
-  let bestMove;
-  if (player === 'O') {
-    let max = -Infinity;
-    for (const m of moves) {
-      if (m.score > max) { max = m.score; bestMove = m; }
-    }
-  } else {
-    let min = Infinity;
-    for (const m of moves) {
-      if (m.score < min) { min = m.score; bestMove = m; }
-    }
-  }
-  return bestMove;
+  return { index: choice };
+
+  // const avail = board.map((v,i) => v === '' ? i : null).filter(i => i !== null);
+  // // base case
+  // if (checkWin(board, 'X')) return {score: -1};
+  // if (checkWin(board, 'O')) return {score: 1};
+  // if (avail.length === 0) return {score: 0};
+
+  // const moves = [];
+  // for (const idx of avail) {
+  //   const newBoard = board.slice();
+  //   newBoard[idx] = player;
+  //   const result = minimax(newBoard, player === 'O' ? 'X' : 'O');
+  //   moves.push({index: idx, score: result.score});
+  // }
+
+  // // transation
+  // let bestMove;
+  // if (player === 'O') {
+  //   let max = -Infinity;
+  //   for (const m of moves) {
+  //     if (m.score > max) { max = m.score; bestMove = m; }
+  //   }
+  // } else {
+  //   let min = Infinity;
+  //   for (const m of moves) {
+  //     if (m.score < min) { min = m.score; bestMove = m; }
+  //   }
+  // }
+  // return bestMove;
 }
 
 function checkWin(board, player) {
